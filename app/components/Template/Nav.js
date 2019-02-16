@@ -10,10 +10,9 @@ const Nav = () => (
   <section id="sidebar">
     <section id="intro">
       <Link to="/" className="logo">
-        <img src={`${BASE_PATH}/images/me_icon.jpg`} alt="" />
+        <img className="logo-image" src={`${BASE_PATH}/images/logo.svg`} alt="" />
       </Link>
       <header>
-        <h2>Suha Baobaid</h2>
         <p><a href="mailto:suha.baobaid@gmail.com">suha.baobaid@gmail.com</a></p>
       </header>
     </section>
@@ -36,7 +35,7 @@ const Nav = () => (
           <li key={s.label}><a href={s.link}><FontAwesomeIcon icon={s.icon} /></a></li>
         ))}
       </ul>
-      <p className="copyright">&copy; Michael D&apos;Angelo <Link to="/">mldangelo.com</Link>.</p>
+      <p className="copyright">&copy; Suha Baobaid.</p>
     </section>
   </section>
 );
