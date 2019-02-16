@@ -12,7 +12,7 @@ const count = markdown.split(/\s+/)
   .filter(s => s.length).length;
 
 // Make all hrefs react router links
-const LinkRenderer = ({ ...children }) => <Link {...children} />;
+// const LinkRenderer = ({ ...children }) => <Link {...children} />;
 
 const About = () => (
   <Main>
@@ -21,16 +21,10 @@ const About = () => (
       <header>
         <div className="title">
           <h2><Link to="/about">About Me</Link></h2>
-          <p>(in about {count} words)</p>
+          <p>(in about {count} sketches)</p>
         </div>
       </header>
-      <ReactMarkdown
-        source={markdown}
-        renderers={{
-          Link: LinkRenderer,
-        }}
-        escapeHtml={false}
-      />
+
     </article>
   </Main>
 );
