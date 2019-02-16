@@ -13,17 +13,15 @@ const Nav = () => (
         <img src={`${BASE_PATH}/images/me_icon.jpg`} alt="" />
       </Link>
       <header>
-        <h2>Michael D&apos;Angelo</h2>
-        <p><a href="mailto:michael.l.dangelo@gmail.com">michael.l.dangelo@gmail.com</a></p>
+        <h2>Suha Baobaid</h2>
+        <p><a href="mailto:suha.baobaid@gmail.com">suha.baobaid@gmail.com</a></p>
       </header>
     </section>
 
     <section className="blurb">
       <h2>About</h2>
-      <p>Hi, I&apos;m Michael. I like building things.
-            I am a <a href="https://icme.stanford.edu/">Stanford ICME</a> graduate, YC Alumni, and
-            the co-founder and CTO of <a href="http://arthena.com">Arthena</a>. Before Arthena I was
-            at <a href="http://matroid.com">Matroid</a>, <a href="http://planet.com">Planet</a>, <a href="http://planetaryresources.com">Planetary Resources</a>, <a href="http://facebook.com">Facebook</a>, and <a href="http://seds.org">SEDS</a>.
+      <p>Hi, I&apos;m Suha. A Computer Engineering graduate from <a href="https://antalya.edu.tr/en">Antalya Bilim University</a>, currently working
+        as a freelance Mobile Developer. Recently started diving into UI/UX design.
       </p>
       <ul className="actions">
         <li>
