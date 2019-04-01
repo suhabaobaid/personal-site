@@ -18,19 +18,13 @@ const validateText = (text) => {
 const messages = [
   'hi',
   'hello',
-  'hola',
-  'you-can-email-me-at-literally-anything! Really',
+  'you can email me for anything! Really',
   'well, not anything. But most things',
-  'like-this',
-  'or-this',
-  'but not this :(  ',
-  'you.can.also.email.me.with.specific.topics.like',
-  'just-saying-hi',
-  'please-work-for-us',
+  'just drop a hi',
+  'or this ',
+  'please work for us',
   'help',
-  'admin',
-  'or-I-really-like-your-website',
-  'I\'ll-stop-distracting-you-now',
+  'okay I\'ll be waiting for your email',
   'thanks',
 ];
 
@@ -48,7 +42,7 @@ const useInterval = (callback, delay) => {
       }, delay);
       return () => clearInterval(id);
     }
-    return () => {}; // pass linter
+    return () => { }; // pass linter
   }, [delay]);
 };
 
@@ -87,17 +81,20 @@ const Contact = () => {
           </div>
         </header>
         <div className="email-at">
-          <p>Feel free to get in touch. You can email me at: </p>
+          <p>Feel free to get in touch.  <span>{message}</span>  </p>
+
           <div
             className="inline-container"
             style={validateText(message) ? {} : { color: 'red' }}
             onMouseEnter={() => setIsActive(false)}
             onMouseLeave={() => (idx < messages.length) && setIsActive(true)}
           >
-            <a href={validateText(message) ? `mailto:${message}@mldangelo.com` : ''}>
-              <span>{message}</span>
-              <span>@mldangelo.com</span>
-            </a>
+            <p> You can email me at:
+              <a href="mailto:suha.baobaid@gmail.com">
+                <span> suha.baobaid@gmail.com</span>
+              </a>
+            </p>
+
           </div>
         </div>
         <ul className="icons">

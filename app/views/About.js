@@ -1,18 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Helmet from 'react-helmet';
-import ReactMarkdown from 'react-markdown';
 
 import Main from '../layouts/Main';
+import ControlledCarousel from '../components/Template/ControlledCarousel';
 
-import markdown from '../data/about.md';
+import AboutImages from '../data/about';
 
-const count = markdown.split(/\s+/)
-  .map(s => s.replace(/\W/g, ''))
-  .filter(s => s.length).length;
-
-// Make all hrefs react router links
-const LinkRenderer = ({ ...children }) => <Link {...children} />;
+const count = AboutImages.length;
 
 const About = () => (
   <Main>
@@ -20,17 +15,18 @@ const About = () => (
     <article className="post" id="about">
       <header>
         <div className="title">
+          <img
+            className="main-logo"
+            src={require('../../public/images/logo.svg')}
+            alt="Logo"
+          />
           <h2><Link to="/about">About Me</Link></h2>
-          <p>(in about {count} words)</p>
+          <p>(in about {count} sketches)</p>
+
+
         </div>
       </header>
-      <ReactMarkdown
-        source={markdown}
-        renderers={{
-          Link: LinkRenderer,
-        }}
-        escapeHtml={false}
-      />
+      <ControlledCarousel />
     </article>
   </Main>
 );

@@ -49,12 +49,13 @@ export default {
         }],
       }, {
         test: /\.css$/,
-        loader: 'style-loader!css-loader?modules&localIdentName=[name]---[local]---[hash:base64:5]',
+        // loader: 'style-loader!css-loader?modules&localIdentName=[name]---[local]---[hash:base64:5]',
+        use: ['style-loader', 'css-loader'],
       }, {
         test: /\.scss$/,
         loaders: 'style-loader!css-loader!sass-loader?modules&localIdentName=[name]---[local]---[hash:base64:5]',
       }, {
-        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        test: /\.(png|woff|woff(2)?)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'url-loader',
         options: {
           limit: 10000,
