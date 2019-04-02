@@ -54,13 +54,7 @@ export default {
         }],
       }, {
         test: /\.css$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {},
-          },
-          'css-loader?modules&localIdentName=[name]---[local]---[hash:base64:5]',
-        ],
+        use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader'],
       }, {
         test: /\.scss$/,
         loaders: 'style-loader!css-loader!sass-loader?modules&localIdentName=[name]---[local]---[hash:base64:5]',
