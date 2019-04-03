@@ -16,7 +16,7 @@ const data = [
     title: 'Medisoft - Hospital',
     subtitle: 'Hospital management app',
     link: 'https://www.youtube.com/playlist?list=PLP4m1Fwd63ueFDIgu7DOYxZaRCGwuRKl_',
-    image: '/images/projects/medisoftHospital1.svg',
+    image: '/images/projects/medisoftHospital.svg',
     date: '2018',
     desc: `Facilitates the need of hospital management:
     - Doctors: check appointments, review test results, add records
