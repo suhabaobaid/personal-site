@@ -1,6 +1,5 @@
 // TODO: Add a couple lines about each project
 // TODO: Fix the dates
-// TODO: reduce the size of the images
 const data = [
   {
     title: 'Medisoft - Patient',

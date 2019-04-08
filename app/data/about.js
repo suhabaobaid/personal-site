@@ -15,6 +15,10 @@ const data = [
     src: `${BASE_PATH}/images/about/productivityZones.svg`,
     alt: 'Productivity and happiness zones',
   },
+  {
+    src: `${BASE_PATH}/images/about/timeThinking.svg`,
+    alt: 'Spending alot of time thinking',
+  },
 ];
 
 export default data;
