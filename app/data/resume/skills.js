@@ -51,27 +51,27 @@ export const skills = [
   },
   {
     title: '.net',
-    compentency: 4,
+    compentency: 2,
     category: ['Web Development', 'Frameworks', 'Backend'],
   },
   {
     title: 'React Native',
-    compentency: 5,
+    compentency: 4,
     category: ['Mobile Development', 'Javascript', 'Frameworks'],
   },
   {
     title: 'Swift',
-    compentency: 3,
+    compentency: 2,
     category: ['Mobile Development', 'Languages'],
   },
   {
     title: 'React',
-    compentency: 4,
+    compentency: 3,
     category: ['Web Development', 'Frameworks', 'Javascript'],
   },
   {
     title: 'Bootstrap',
-    compentency: 4,
+    compentency: 2,
     category: ['Web Development', 'Frameworks'],
   },
   {
@@ -96,7 +96,7 @@ export const skills = [
   },
   {
     title: 'ElasticSearch',
-    compentency: 3,
+    compentency: 2,
     category: ['Web Development', 'Mobile Development', 'Databases'],
   },
   {
@@ -111,7 +111,7 @@ export const skills = [
   },
   {
     title: 'SQL',
-    compentency: 4,
+    compentency: 3,
     category: ['Databases'],
   },
   {
@@ -156,7 +156,7 @@ export const skills = [
   },
   {
     title: 'HTML',
-    compentency: 5,
+    compentency: 3,
     category: ['Web Development', 'Languages'],
   },
   {
@@ -166,7 +166,7 @@ export const skills = [
   },
   {
     title: 'Python',
-    compentency: 4,
+    compentency: 3,
     category: ['Languages', 'Python'],
 
   },
@@ -197,7 +197,7 @@ export const skills = [
   },
   {
     title: 'Java',
-    compentency: 4,
+    compentency: 3,
     category: ['Languages'],
   },
   {
